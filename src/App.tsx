@@ -5,6 +5,12 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import FemdomServices from "./pages/FemdomServices";
+import FinancialDomination from "./pages/FinancialDomination";
+import FetishQueen from "./pages/FetishQueen";
+import FLRCounselling from "./pages/FLRCounselling";
+import DominatrixServices from "./pages/DominatrixServices";
+import FantasyMistress from "./pages/FantasyMistress";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +22,12 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/femdom-services" element={<FemdomServices />} />
+          <Route path="/financial-domination" element={<FinancialDomination />} />
+          <Route path="/fetish-queen" element={<FetishQueen />} />
+          <Route path="/flr-counselling" element={<FLRCounselling />} />
+          <Route path="/dominatrix-services" element={<DominatrixServices />} />
+          <Route path="/fantasy-mistress" element={<FantasyMistress />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -4,48 +4,34 @@ import { Button } from "@/components/ui/button";
 const ServicesSection = () => {
   const services = [
     {
-      title: "FLR Coaching",
-      description: "Comprehensive guidance for those seeking to embrace Female-Led dynamics. I will teach you the protocols, mindset, and devotion required to serve properly.",
-      price: "Inquiry Required",
-      features: [
-        "Personal assessment and goal setting",
-        "Behavioral modification techniques", 
-        "Protocol establishment and training",
-        "Ongoing accountability and guidance"
-      ]
+      title: "Femdom Services",
+      description: "Enter the world of Female Dominance under My expert guidance. Power exchange, discipline, and worship training.",
+      link: "/femdom-services"
     },
     {
-      title: "Submissive Training",
-      description: "Intensive conditioning for those ready to surrender completely. Learn to anticipate needs, follow commands, and find purpose in service.",
-      price: "Selective Acceptance",
-      features: [
-        "Mindset restructuring sessions",
-        "Obedience and ritual training",
-        "Service-oriented skill development",
-        "Regular evaluation and correction"
-      ]
+      title: "Financial Domination",
+      description: "The ultimate expression of devotion through financial surrender. Your money becomes a tool of worship.",
+      link: "/financial-domination"
     },
     {
-      title: "Behavior Correction",
-      description: "For those who have strayed from their path. Firm but caring guidance to realign your priorities and recommit to proper devotion.",
-      price: "By Appointment",
-      features: [
-        "Personalized correction protocols",
-        "Accountability structures",
-        "Progress tracking and rewards",
-        "Mindfulness and focus exercises"
-      ]
+      title: "Fetish Queen",
+      description: "Your desires are My domain. I am the sovereign of your fetishes and the architect of your fantasies.",
+      link: "/fetish-queen"
     },
     {
-      title: "Online Domination",
-      description: "Virtual sessions for devoted submissives seeking My direct attention. Experience My presence and guidance from anywhere in the world.",
-      price: "Premium Service", 
-      features: [
-        "Live video guidance sessions",
-        "Personalized task assignments",
-        "Real-time feedback and correction",
-        "Exclusive access to My attention"
-      ]
+      title: "FLR Counselling",
+      description: "Expert guidance for Female-Led relationships. Transform your dynamic with professional support.",
+      link: "/flr-counselling"
+    },
+    {
+      title: "Professional Dominatrix",
+      description: "Experience the full power of My dominance in carefully crafted sessions and training programs.",
+      link: "/dominatrix-services"
+    },
+    {
+      title: "Fantasy Mistress",
+      description: "I am the architect of dreams and the goddess of your deepest fantasies. Imagination becomes reality.",
+      link: "/fantasy-mistress"
     }
   ];
 
@@ -64,30 +50,22 @@ const ServicesSection = () => {
           <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="bg-card/80 border-primary/20 hover:shadow-elegant transition-all duration-300 hover:scale-105">
+            <Card key={index} className="bg-card/80 border-primary/20 hover:shadow-elegant transition-all duration-300 hover:scale-105 cursor-pointer group">
               <CardHeader>
-                <CardTitle className="text-2xl text-primary mb-2">{service.title}</CardTitle>
-                <p className="text-accent font-semibold">{service.price}</p>
+                <CardTitle className="text-2xl text-primary mb-2 group-hover:text-accent transition-colors">{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   {service.description}
                 </p>
                 
-                <ul className="space-y-2 mb-6">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start text-sm text-muted-foreground">
-                      <span className="text-primary mr-2 mt-1">✦</span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-                
-                <Button variant="outline" className="w-full">
-                  Request Consideration
-                </Button>
+                <a href={service.link}>
+                  <Button variant="command" className="w-full">
+                    Explore This Path
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           ))}

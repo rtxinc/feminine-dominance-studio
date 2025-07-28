@@ -17,23 +17,44 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold text-primary">
-            Mistress Elena
+            Mistress Rose
           </div>
           
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             <button 
               onClick={() => scrollToSection('about')}
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               About
             </button>
-            <button 
-              onClick={() => scrollToSection('services')}
-              className="text-muted-foreground hover:text-primary transition-colors"
-            >
-              Services
-            </button>
+            <div className="relative group">
+              <button className="text-muted-foreground hover:text-primary transition-colors">
+                Services
+              </button>
+              <div className="absolute top-full left-0 mt-2 w-56 bg-background/95 backdrop-blur-md border border-primary/20 rounded-lg shadow-elegant opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                <div className="p-2">
+                  <a href="/femdom-services" className="block px-4 py-2 text-sm text-muted-foreground hover:text-primary hover:bg-primary/10 rounded-md transition-colors">
+                    Femdom Services
+                  </a>
+                  <a href="/financial-domination" className="block px-4 py-2 text-sm text-muted-foreground hover:text-primary hover:bg-primary/10 rounded-md transition-colors">
+                    Financial Domination
+                  </a>
+                  <a href="/fetish-queen" className="block px-4 py-2 text-sm text-muted-foreground hover:text-primary hover:bg-primary/10 rounded-md transition-colors">
+                    Fetish Queen
+                  </a>
+                  <a href="/flr-counselling" className="block px-4 py-2 text-sm text-muted-foreground hover:text-primary hover:bg-primary/10 rounded-md transition-colors">
+                    FLR Counselling
+                  </a>
+                  <a href="/dominatrix-services" className="block px-4 py-2 text-sm text-muted-foreground hover:text-primary hover:bg-primary/10 rounded-md transition-colors">
+                    Professional Dominatrix
+                  </a>
+                  <a href="/fantasy-mistress" className="block px-4 py-2 text-sm text-muted-foreground hover:text-primary hover:bg-primary/10 rounded-md transition-colors">
+                    Fantasy Mistress
+                  </a>
+                </div>
+              </div>
+            </div>
             <button 
               onClick={() => scrollToSection('testimonials')}
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -75,12 +96,29 @@ const Navigation = () => {
               >
                 About
               </button>
-              <button 
-                onClick={() => scrollToSection('services')}
-                className="text-left text-muted-foreground hover:text-primary transition-colors"
-              >
-                Services
-              </button>
+              <div className="text-left">
+                <div className="text-muted-foreground mb-2">Services</div>
+                <div className="ml-4 space-y-2">
+                  <a href="/femdom-services" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                    Femdom Services
+                  </a>
+                  <a href="/financial-domination" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                    Financial Domination
+                  </a>
+                  <a href="/fetish-queen" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                    Fetish Queen
+                  </a>
+                  <a href="/flr-counselling" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                    FLR Counselling
+                  </a>
+                  <a href="/dominatrix-services" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                    Professional Dominatrix
+                  </a>
+                  <a href="/fantasy-mistress" className="block text-sm text-muted-foreground hover:text-primary transition-colors">
+                    Fantasy Mistress
+                  </a>
+                </div>
+              </div>
               <button 
                 onClick={() => scrollToSection('testimonials')}
                 className="text-left text-muted-foreground hover:text-primary transition-colors"
