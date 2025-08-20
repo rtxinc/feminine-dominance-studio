@@ -11,6 +11,8 @@ import FetishQueen from "./pages/FetishQueen";
 import FLRCounselling from "./pages/FLRCounselling";
 import DominatrixServices from "./pages/DominatrixServices";
 import FantasyMistress from "./pages/FantasyMistress";
+import Contact from "./pages/Contact";
+import Toys from "./pages/Toys";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +30,8 @@ const App = () => (
           <Route path="/flr-counselling" element={<FLRCounselling />} />
           <Route path="/dominatrix-services" element={<DominatrixServices />} />
           <Route path="/fantasy-mistress" element={<FantasyMistress />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/toys" element={<Toys />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

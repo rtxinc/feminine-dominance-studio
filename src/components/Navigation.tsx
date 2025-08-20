@@ -34,6 +34,12 @@ const Navigation = () => {
             >
               About
             </button>
+            <a 
+              href="/toys"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              Toys
+            </a>
             <div className="relative group">
               <button className="text-muted-foreground hover:text-primary transition-colors">
                 Services
@@ -73,6 +79,12 @@ const Navigation = () => {
             >
               Rules
             </button>
+            <a 
+              href="/contact"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              Contact
+            </a>
             <Button 
               variant="command" 
               onClick={() => scrollToSection('contact')}
@@ -102,6 +114,12 @@ const Navigation = () => {
               >
                 About
               </button>
+              <a 
+                href="/toys"
+                className="text-left text-muted-foreground hover:text-primary transition-colors"
+              >
+                Toys
+              </a>
               <div className="text-left">
                 <div className="text-muted-foreground mb-2">Services</div>
                 <div className="ml-4 space-y-2">
@@ -137,6 +155,12 @@ const Navigation = () => {
               >
                 Rules
               </button>
+              <a 
+                href="/contact"
+                className="text-left text-muted-foreground hover:text-primary transition-colors"
+              >
+                Contact
+              </a>
               <Button 
                 variant="command" 
                 onClick={() => scrollToSection('contact')}
