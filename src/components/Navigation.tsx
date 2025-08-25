@@ -23,7 +23,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold text-primary">
-            Mistress Rose
+            Mistress Rose Elites Seductive World
           </div>
           
           {/* Desktop Menu */}
