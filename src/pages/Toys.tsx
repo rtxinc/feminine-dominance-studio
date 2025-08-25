@@ -2,6 +2,12 @@ import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import silkRestraints from "@/assets/silk-restraints.jpg";
+import crystalCollar from "@/assets/crystal-collar.jpg";
+import disciplineKit from "@/assets/discipline-kit.jpg";
+import sensorySet from "@/assets/sensory-set.jpg";
+import worshipKit from "@/assets/worship-kit.jpg";
+import trainingTools from "@/assets/training-tools.jpg";
 
 const Toys = () => {
   const toys = [
@@ -11,7 +17,7 @@ const Toys = () => {
       price: "$89",
       description: "Premium silk restraints for the discerning submissive. Elegant, comfortable, and effective.",
       category: "Restraints",
-      image: "🎀",
+      image: silkRestraints,
       featured: true
     },
     {
@@ -20,7 +26,7 @@ const Toys = () => {
       price: "$156",
       description: "Handcrafted crystal collar symbolizing dedication and submission to your Mistress.",
       category: "Jewelry",
-      image: "💎",
+      image: crystalCollar,
       featured: true
     },
     {
@@ -29,7 +35,7 @@ const Toys = () => {
       price: "$234",
       description: "Complete kit for training and discipline. Quality materials for the committed servant.",
       category: "Training",
-      image: "⚡",
+      image: disciplineKit,
       featured: false
     },
     {
@@ -38,7 +44,7 @@ const Toys = () => {
       price: "$67",
       description: "High-quality blindfold and accessories to heighten awareness and submission.",
       category: "Sensory",
-      image: "🖤",
+      image: sensorySet,
       featured: false
     },
     {
@@ -47,7 +53,7 @@ const Toys = () => {
       price: "$123",
       description: "Everything needed for proper worship and devotion. Mistress-approved quality.",
       category: "Worship",
-      image: "👑",
+      image: worshipKit,
       featured: true
     },
     {
@@ -56,7 +62,7 @@ const Toys = () => {
       price: "$345",
       description: "Professional-grade tools for serious devotees ready for advanced instruction.",
       category: "Training",
-      image: "🔥",
+      image: trainingTools,
       featured: false
     }
   ];
@@ -86,7 +92,13 @@ const Toys = () => {
                 }`}
               >
                 <CardHeader className="text-center">
-                  <div className="text-6xl mb-4">{toy.image}</div>
+                  <div className="mb-4 h-48 overflow-hidden rounded-lg">
+                    <img 
+                      src={toy.image} 
+                      alt={toy.name}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
                   <div className="flex items-center justify-between mb-2">
                     <Badge variant={toy.featured ? "default" : "secondary"} className="text-xs">
                       {toy.category}
