@@ -8,6 +8,12 @@ import disciplineKit from "@/assets/discipline-kit.jpg";
 import sensorySet from "@/assets/sensory-set.jpg";
 import worshipKit from "@/assets/worship-kit.jpg";
 import trainingTools from "@/assets/training-tools.jpg";
+import leatherFlogger from "@/assets/leather-flogger.jpg";
+import velvetBlindfold from "@/assets/velvet-blindfold.jpg";
+import metalCuffs from "@/assets/metal-cuffs.jpg";
+import featherTickler from "@/assets/feather-tickler.jpg";
+import leatherPaddle from "@/assets/leather-paddle.jpg";
+import leatherChoker from "@/assets/leather-choker.jpg";
 
 const Toys = () => {
   const toys = [
@@ -63,6 +69,60 @@ const Toys = () => {
       description: "Professional-grade tools for serious devotees ready for advanced instruction.",
       category: "Training",
       image: trainingTools,
+      featured: false
+    },
+    {
+      id: 7,
+      name: "Premium Leather Flogger",
+      price: "$198",
+      description: "Handcrafted leather flogger with ergonomic handle. Perfect balance of sensation and control.",
+      category: "Impact",
+      image: leatherFlogger,
+      featured: true
+    },
+    {
+      id: 8,
+      name: "Velvet Sensory Blindfold",
+      price: "$45",
+      description: "Luxurious velvet blindfold with adjustable strap. Enhances anticipation and focus.",
+      category: "Sensory",
+      image: velvetBlindfold,
+      featured: false
+    },
+    {
+      id: 9,
+      name: "Professional Metal Cuffs",
+      price: "$134",
+      description: "Heavy-duty metal restraints with comfort padding. Secure and reliable for extended sessions.",
+      category: "Restraints",
+      image: metalCuffs,
+      featured: false
+    },
+    {
+      id: 10,
+      name: "Delicate Feather Tickler",
+      price: "$29",
+      description: "Soft natural feathers on elegant handle. Creates exquisite sensations and teasing moments.",
+      category: "Sensory",
+      image: featherTickler,
+      featured: false
+    },
+    {
+      id: 11,
+      name: "Artisan Leather Paddle",
+      price: "$167",
+      description: "Premium leather paddle with smooth finish. Delivers precise impact with beautiful craftsmanship.",
+      category: "Impact",
+      image: leatherPaddle,
+      featured: true
+    },
+    {
+      id: 12,
+      name: "Elegant Leather Choker",
+      price: "$78",
+      description: "Classic leather choker with D-ring attachment. Symbolizes ownership and devotion.",
+      category: "Collars",
+      image: leatherChoker,
       featured: false
     }
   ];
