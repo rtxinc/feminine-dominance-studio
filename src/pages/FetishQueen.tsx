@@ -42,9 +42,20 @@ const FetishQueen = () => {
       <div className="pt-24 pb-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
-              Fetish <span className="text-primary">Queen</span>
-            </h1>
+            <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-elegant mb-8 max-w-4xl mx-auto">
+              <img 
+                src="/lovable-uploads/eb0e0512-e6dc-4cf4-921a-b71481790b30.png"
+                alt="Fetish Queen - Specialized Training and Fantasy Fulfillment"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/40 to-transparent"></div>
+              <div className="absolute bottom-6 left-6 right-6 text-left">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+                  Fetish <span className="text-primary">Queen</span>
+                </h1>
+              </div>
+            </div>
+            
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Your desires are My domain. I am the sovereign of your fetishes, the architect of your fantasies, and the key to unlocking pleasures you never knew existed.
             </p>

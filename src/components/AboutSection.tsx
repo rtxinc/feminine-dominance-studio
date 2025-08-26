@@ -13,7 +13,18 @@ const AboutSection = () => {
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 text-lg leading-relaxed">
+          <div className="order-2 md:order-1">
+            <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-elegant">
+              <img 
+                src="/lovable-uploads/569fac1f-320e-4d6e-be5f-7e44c2f97e0b.png"
+                alt="Mistress Rose - Professional Dominatrix and Relationship Expert"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent"></div>
+            </div>
+          </div>
+          
+          <div className="space-y-6 text-lg leading-relaxed order-1 md:order-2">
             <p className="text-foreground">
               I am a sophisticated Mistress and Female-Led Relationship expert who specializes in 
               <span className="text-primary font-semibold"> reshaping minds</span> and guiding devoted souls 

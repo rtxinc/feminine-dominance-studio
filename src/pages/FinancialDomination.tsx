@@ -42,9 +42,20 @@ const FinancialDomination = () => {
       <div className="pt-24 pb-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
-              Financial <span className="text-primary">Domination</span>
-            </h1>
+            <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-elegant mb-8 max-w-4xl mx-auto">
+              <img 
+                src="/lovable-uploads/f81be0c1-2349-4902-a1d4-fa8286f94a4b.png"
+                alt="Financial Domination - Luxury Lifestyle"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/40 to-transparent"></div>
+              <div className="absolute bottom-6 left-6 right-6 text-left">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+                  Financial <span className="text-primary">Domination</span>
+                </h1>
+              </div>
+            </div>
+            
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               The ultimate expression of devotion through financial surrender. Your money becomes a tool of worship, and your sacrifices become offerings at My altar.
             </p>

@@ -42,9 +42,20 @@ const FemdomServices = () => {
       <div className="pt-24 pb-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
-              Femdom <span className="text-primary">Services</span>
-            </h1>
+            <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-elegant mb-8 max-w-4xl mx-auto">
+              <img 
+                src="/lovable-uploads/25652dbf-6694-422b-9136-3f3621182b31.png"
+                alt="Professional Femdom Session - Power Exchange Training"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/40 to-transparent"></div>
+              <div className="absolute bottom-6 left-6 right-6 text-left">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+                  Femdom <span className="text-primary">Services</span>
+                </h1>
+              </div>
+            </div>
+            
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Enter the world of Female Dominance under My expert guidance. These services are designed to awaken your deepest desires for submission and reshape your understanding of power.
             </p>
