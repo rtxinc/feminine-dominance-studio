@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useNavigate } from "react-router-dom";
 import silkRestraints from "@/assets/silk-restraints.jpg";
 import crystalCollar from "@/assets/crystal-collar.jpg";
 import disciplineKit from "@/assets/discipline-kit.jpg";
@@ -16,6 +17,7 @@ import leatherPaddle from "@/assets/leather-paddle.jpg";
 import leatherChoker from "@/assets/leather-choker.jpg";
 
 const Toys = () => {
+  const navigate = useNavigate();
   const toys = [
     {
       id: 1,
@@ -179,7 +181,7 @@ const Toys = () => {
                   <Button 
                     variant="command" 
                     className="w-full"
-                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    onClick={() => navigate('/contact')}
                   >
                     Request Information
                   </Button>
@@ -199,7 +201,7 @@ const Toys = () => {
                   specifically for your journey and level of commitment. Contact Me for a consultation 
                   to determine which items are appropriate for your training.
                 </p>
-                <Button variant="outline" size="lg">
+                <Button variant="outline" size="lg" onClick={() => navigate('/contact')}>
                   Schedule Consultation
                 </Button>
               </CardContent>

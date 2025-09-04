@@ -1,8 +1,10 @@
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
 
 const FemdomServices = () => {
+  const navigate = useNavigate();
   const services = [
     {
       title: "Power Exchange Training",
@@ -82,7 +84,7 @@ const FemdomServices = () => {
                     ))}
                   </ul>
                   
-                  <Button variant="command" className="w-full">
+                  <Button variant="command" className="w-full" onClick={() => navigate('/contact')}>
                     Request This Service
                   </Button>
                 </CardContent>

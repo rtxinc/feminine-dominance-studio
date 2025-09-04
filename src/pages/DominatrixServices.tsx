@@ -1,8 +1,10 @@
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
 
 const DominatrixServices = () => {
+  const navigate = useNavigate();
   const services = [
     {
       title: "Professional Domination Sessions",
@@ -82,7 +84,7 @@ const DominatrixServices = () => {
                     ))}
                   </ul>
                   
-                  <Button variant="command" className="w-full">
+                  <Button variant="command" className="w-full" onClick={() => navigate('/contact')}>
                     Request Session
                   </Button>
                 </CardContent>
