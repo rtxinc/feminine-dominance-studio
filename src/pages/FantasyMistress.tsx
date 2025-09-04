@@ -1,8 +1,10 @@
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
 
 const FantasyMistress = () => {
+  const navigate = useNavigate();
   const services = [
     {
       title: "Fantasy Scenario Creation",
@@ -71,7 +73,7 @@ const FantasyMistress = () => {
                     ))}
                   </ul>
                   
-                  <Button variant="command" className="w-full">
+                  <Button variant="command" className="w-full" onClick={() => navigate('/contact')}>
                     Enter My Fantasy Realm
                   </Button>
                 </CardContent>

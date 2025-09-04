@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const scrollToSection = (sectionId: string) => {
     // If we're not on the main page, navigate there first
@@ -87,7 +89,7 @@ const Navigation = () => {
             </a>
             <Button 
               variant="command" 
-              onClick={() => scrollToSection('contact')}
+              onClick={() => navigate('/contact')}
             >
               Begin
             </Button>
@@ -163,7 +165,7 @@ const Navigation = () => {
               </a>
               <Button 
                 variant="command" 
-                onClick={() => scrollToSection('contact')}
+                onClick={() => navigate('/contact')}
                 className="mt-4"
               >
                 Begin

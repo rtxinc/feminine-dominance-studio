@@ -1,8 +1,10 @@
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
 
 const FLRCounselling = () => {
+  const navigate = useNavigate();
   const services = [
     {
       title: "Relationship Transformation",
@@ -71,7 +73,7 @@ const FLRCounselling = () => {
                     ))}
                   </ul>
                   
-                  <Button variant="command" className="w-full">
+                  <Button variant="command" className="w-full" onClick={() => navigate('/contact')}>
                     Begin FLR Journey
                   </Button>
                 </CardContent>
