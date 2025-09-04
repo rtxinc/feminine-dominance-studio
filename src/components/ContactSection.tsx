@@ -3,11 +3,20 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import contactBackground from "@/assets/contact-background.jpg";
 
 const ContactSection = () => {
   return (
-    <section className="py-20 px-6 bg-card/50">
-      <div className="max-w-4xl mx-auto">
+    <section className="py-20 px-6 relative overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${contactBackground})` }}
+      >
+        <div className="absolute inset-0 bg-background/80"></div>
+      </div>
+      
+      <div className="max-w-4xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
             <span className="text-primary">Kneel.</span> Inquire. 
@@ -20,7 +29,7 @@ const ContactSection = () => {
           <div className="w-24 h-1 bg-gradient-primary mx-auto mt-8"></div>
         </div>
 
-        <Card className="bg-background/80 border-primary/20 shadow-glow">
+        <Card className="bg-background/90 backdrop-blur-sm border-primary/20 shadow-glow">
           <CardHeader>
             <CardTitle className="text-2xl text-center text-primary">
               Request My Attention
@@ -105,7 +114,7 @@ const ContactSection = () => {
         </Card>
 
         <div className="mt-12 text-center">
-          <Card className="bg-gradient-primary/10 border-primary/30">
+          <Card className="bg-gradient-primary/15 backdrop-blur-sm border-primary/30">
             <CardContent className="p-6">
               <h3 className="text-xl font-bold text-primary mb-2">Alternative Contact</h3>
               <p className="text-muted-foreground">
